@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div
+      id="page-loader"
+      class="page-loader"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <div class="loading-spinner">
+        <span class="loading-spinner-dot"></span>
+        <span class="loading-spinner-dot"></span>
+        <span class="loading-spinner-dot"></span>
+      </div>
+    </div>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Wessam.dev</a>
@@ -20,6 +32,7 @@
             <li><a href="cv.html">CV</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="signUp.html">Sign Up</a></li>
+            <li><a href="clock.html">Clock</a></li>
           </ul>
         </nav>
       </div>
@@ -37,7 +50,9 @@
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="cv.html">View My CV</a>
-              <a class="btn btn-secondary" href="mailto:wessamadelgawad@gmail.com"
+              <a
+                class="btn btn-secondary"
+                href="mailto:wessamadelgawad@gmail.com"
                 >Hire Me</a
               >
             </div>
@@ -67,33 +82,49 @@
                 src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=1000&q=80"
                 alt="Colorful frontend code editor on dual screens"
               />
-              <h3>HAL Admin Dashboard</h3>
-              <p>
-                SaaS dashboard for HR teams with modular UI architecture,
-                optimized API caching, and role-based access.
-              </p>
+              <div class="project-card-content">
+                <h3>HAL Admin Dashboard</h3>
+                <p>
+                  SaaS dashboard for HR teams with modular UI architecture,
+                  optimized API caching, and role-based access.
+                </p>
+
+                <div class="project-card-overlay">
+                  <button class="btn btn-primary">View Project</button>
+                </div>
+              </div>
             </article>
             <article class="project-card">
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
                 alt="Frontend developer setup with vibrant UI on screen"
               />
-              <h3>Construction Power Portal</h3>
-              <p>
-                Responsive operations portal focused on high-performance tables,
-                reusable components, and smooth data flow.
-              </p>
+              <div class="project-card-content">
+                <h3>Construction Power Portal</h3>
+                <p>
+                  Responsive operations portal focused on high-performance
+                  tables, reusable components, and smooth data flow.
+                </p>
+                <div class="project-card-overlay">
+                  <button class="btn btn-primary">View Project</button>
+                </div>
+              </div>
             </article>
             <article class="project-card">
               <img
                 src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=80"
                 alt="Bright coding interface for modern web development"
               />
-              <h3>ITBA Government Portal</h3>
-              <p>
-                Scalable frontend features, API integration improvements, and
-                production-ready user experience.
-              </p>
+              <div class="project-card-content">
+                <h3>ITBA Government Portal</h3>
+                <p>
+                  Scalable frontend features, API integration improvements, and
+                  production-ready user experience.
+                </p>
+                <div class="project-card-overlay">
+                  <button class="btn btn-primary">View Project</button>
+                </div>
+              </div>
             </article>
           </div>
         </div>
@@ -105,5 +136,6 @@
         <p>Copyright 2026 Wessam Lasheen. All rights reserved.</p>
       </div>
     </footer>
+    <script src="page-loader.js" defer></script>
   </body>
 </html>

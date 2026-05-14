@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div
+      id="page-loader"
+      class="page-loader"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <div class="loading-spinner">
+        <span class="loading-spinner-dot"></span>
+        <span class="loading-spinner-dot"></span>
+        <span class="loading-spinner-dot"></span>
+      </div>
+    </div>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">Wessam.dev</a>
@@ -138,5 +150,6 @@
         </p>
       </section>
     </main>
+    <script src="page-loader.js" defer></script>
   </body>
 </html>
